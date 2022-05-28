@@ -1,0 +1,17 @@
+/*for tablet */
+@media only screen and (min-width: 200px) and (max-width:991px) {
+    .mean-container .mean-bar, .mean-container .mean-bar * {border: none;}
+    .inner_nav_area nav ul li::after {width: 0;height: 0;}
+    .mean-container .mean-nav ul {width: 75%;}
+}
+/* for mobile */
+@media only screen and (min-width: 200px) and (max-width:580px) {
+    .inner_top_header, .inner_middle_header, .inner_hero, .inner_content, .inner_testimonial, .inner_footer {-webkit-flex-direction: column;flex-direction: column;}
+    .mini_menu {text-align: center;}
+    .search_area {margin: 0 auto;}
+    .logo_area {text-align: center;}
+    .banner_image_area {margin: 0 auto;padding-top:0;}
+    .hero_text {padding:0;}
+    .hero_text h2 {text-align:center;}
+    .hero_text a {margin: 20px 0;}
+}

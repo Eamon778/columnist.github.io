@@ -1,0 +1,294 @@
+/*================================================================
+                        common css 
+================================================================*/
+body {
+    width: 100%;
+    margin: 0;
+    font-family: Georgia;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #666666;
+}
+.container {
+    width: 96%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*================================================================
+                        top header css
+================================================================*/
+#top_header_area {
+    width: 100%;
+    clear: both;
+    background-color: #2d2928;
+}
+.inner_top_header {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+}
+.mini_menu {
+    -webkit-flex: 6;
+    flex: 6;
+}
+.mini_menu ul {
+    list-style: none;
+    padding: 0;
+}
+.mini_menu ul li {
+    display: inline-block;
+    padding-right: 10px;
+    position: relative;
+}
+.mini_menu ul li::after {
+    position: absolute;
+    content: "";
+    background-color: #c4c4c4;
+    width: 2px;
+    height: 15px;
+    top: 3px;
+    right: 2px;
+}
+.mini_menu ul li:last-child::after {
+    display: none;
+}
+.mini_menu ul li a {
+    text-decoration: none;
+    color: #c4c4c4;
+}
+.search_area {
+    -webkit-flex: 4;
+    flex: 4;
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+.search_area form {
+    float: right;
+    background-color: #fff;
+    width: 200px;
+    height: 20px;
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 15px;
+    padding: 5px;
+}
+.search_area form input.text {
+    -webkit-flex: 9;
+    flex: 9;
+    border: 0;
+    outline: none;
+}
+.search_area form input.submit {
+    -webkit-flex: 1;
+    flex: 1;
+    background: url(img/search-icon.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 0px;
+    margin-top: 1px;
+    border: none;
+    cursor: pointer;
+}
+/*================================================================
+                        middle header css
+================================================================*/
+#middle_header_area {
+    width: 100%;
+    clear: both;
+}
+.inner_middle_header {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+}
+.logo_area {
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 40px 0;
+}
+.banner_image_area {
+    -webkit-flex: 1;
+    flex: 1;
+    padding: 40px 0;
+}
+.banner_image_area img {
+    float: right;
+}
+/*================================================================
+                        middle header css
+================================================================*/
+#nav_area {
+    width: 100%;
+    clear: both;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.border {
+    margin: 1px 0;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.inner_nav_area nav ul {
+    list-style: none;
+    padding: 0;
+}
+.inner_nav_area nav ul li {
+    position: relative;
+    display: inline-block;
+    padding-right: 15px;
+}
+.inner_nav_area nav ul li::after {
+    position: absolute;
+    content: "";
+    background: #666666;
+    width: 1px;
+    height: 10px;
+    top: 5px;
+    right: 7px;
+}
+.inner_nav_area nav ul li:last-child::after{
+    display: none;
+}
+.inner_nav_area nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
+.inner_nav_area nav ul li a:hover {
+    color: #ff9900;
+}
+/*================================================================
+                        hero area css
+================================================================*/
+#hero_area {
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #e1e1e1;
+}
+.inner_hero {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+}
+.inner_hero img {
+    padding: 40px 0;
+}
+.hero_text {
+    padding-top: 70px;
+    padding-left: 50px;
+}
+.hero_text h2 {
+    margin: 0;
+    font-size: 50px;
+    line-height: 1.3em;
+    color: #666666;
+    padding-bottom: 20px;
+}
+.hero_text p {
+    margin: 0;
+    line-height: 1.4em;
+    font-size: 16px;
+}
+.hero_text a {
+    display: block;
+    text-decoration: none;
+    margin-top: 30px;
+    color: #ff9900;
+}
+/*================================================================
+                        main content area css
+================================================================*/
+#content_area {
+    width: 100%;
+    clear: both;
+    border: 1px solid #e1e1e1;
+}
+.inner_content {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+}
+.column {
+    padding-top: 40px;
+    padding-right: 30px;
+}
+.column:last-child{
+    padding-right: 0;
+}
+.child_content {
+    padding-bottom: 30px;
+}
+.child_content p {
+    font-size: 18px;
+}
+.child_content p.date {
+    font-size: 14px;
+    color: #989898;
+    margin: 0;
+}
+.child_content a {
+    text-decoration: none;
+    color: #ff9900;
+    display: block;
+}
+.child_content img {
+    padding: 3px;
+    border: 1px solid #e1e1e1;
+}
+/*================================================================
+                        testimonial area css
+================================================================*/
+#testimonial_area {
+    width: 100%;
+    clear: both;
+    border-bottom: 1px solid #232323;
+}
+.inner_testimonial {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+}
+.child_testimonial {
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+}
+.child_testimonial:last-child {
+    padding-right: 0;
+}
+.child_testimonial h3 {
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.child_testimonial p {
+    padding-right: 40px;
+    margin: 0;
+    padding-top: 10px;
+    color: #ff9900;
+}
+/*================================================================
+                        copyright area css
+================================================================*/
+#footer_area {
+    width: 100%;
+    clear: both;
+    border-top: 1px solid #e1e1e1;
+    background-color: #232323;
+}
+.inner_footer {
+    overflow: hidden;
+    display: -webkit-flex;
+    display: flex;
+}
+.left_copyright {
+    -webkit-flex: 6;
+    flex: 6;
+}
